@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>launchSelected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main" transform="translate(-35.000000, -176.000000)">
+            <g id="launchSelected" transform="translate(35.000000, 176.000000)">
+                <circle id="Oval-2-Copy" fill="#E68343" cx="26" cy="26" r="26"></circle>
+                <path d="M37.0001631,11 L11,27.3137555 L19.6452479,31.1183195 L20.3514151,40.000244 L27.4546743,34.5560903 L37.0001631,38.757539 L37.0001631,11 Z M14.4656012,27.0616361 L31.9330465,16.1009459 L20.1532643,29.5649383 L14.4656012,27.0616361 Z M28.3834554,33.1873256 L35.3684765,16.5872925 L35.3684765,36.2623697 L28.3834554,33.1873256 Z M21.2532868,30.781618 L33.5329311,16.7466971 L26.6400542,33.1295821 L21.7392864,36.8853487 L21.2532868,30.781618 Z" id="launch" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,190 @@
+/*------------------COLOR------------------*/
+.navy {
+  background-color: #202089;
+}
+.orange {
+  background-color: #E68343;
+}
+.grass {
+  background-color: #7CC274;
+}
+.aqua {
+  background-color: #A3E8C0;
+}
+.olive {
+  background-color: #BCCA5C;
+}
+.pink {
+  background-color: #CD6799;
+}
+.blue {
+  background-color: #5A90CF;
+}
+
+/*------------------ICON------------------*/
+.icon {
+  width: 52px;
+  margin: 1.2vh;
+}
+
+.icon-dash {
+  background: url("../img/icons/dash.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-dash:hover, .icon-dash.selected {
+  background: url("../img/icons/dashSelected.svg");
+}
+
+.icon-launch {
+  background: url("../img/icons/launch.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-launch:hover, .icon-launch.selected {
+  background: url("../img/icons/launchSelected.svg");
+}
+
+.icon-snip {
+  background: url("../img/icons/snip.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-snip:hover, .icon-snip.selected {
+  background: url("../img/icons/snipSelected.svg");
+}
+
+.icon-redeem {
+  background: url("../img/icons/redeem.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-redeem:hover, .icon-redeem.selected {
+  background: url("../img/icons/redeemSelected.svg");
+}
+
+.icon-snap {
+  background: url("../img/icons/snap.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-snap:hover, .icon-snap.selected {
+  background: url("../img/icons/snapSelected.svg");
+}
+
+.icon-download {
+  background: url("../img/icons/download.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-download:hover, .icon-download.selected {
+  background: url("../img/icons/downloadSelected.svg");
+}
+
+.icon-store {
+  background: url("../img/icons/store.svg");
+  display: block;
+  width: 52px;
+  height: 52px
+}
+.icon-store:hover, .icon-store.selected {
+  background: url("../img/icons/storeSelected.svg");
+}
+
+
+
+/*------------------LAYOUT------------------*/
+
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+#title {
+  font-family: open sans;
+  color: #A3E8C0;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0 0 0 10px;
+}
+
+.body {
+  height: 90vh;
+  display:flex;
+  flex-direction: row;
+}
+
+.panel-left {
+  align-items: center;
+  width: 10vw;
+  display:flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  width: 86vw;
+  display:flex;
+  flex-direction: column;
+}
+/*------------------METRICS------------------*/
+.metrics-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 150px;
+
+}
+
+.metric {
+  width: 24%;
+  height: 150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  font-family: open sans;
+  color: white
+}
+
+.metric .icon {
+  width: 70px;
+  margin:-10px 0 -22px 0;
+}
+
+.metric-value {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: -14px;
+}
+.metric-value span {
+  font-size: 32px;
+}
+
+.metric-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*------------------CHART------------------*/
+.chart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  padding: 40px;
+}
+.chart canvas {
+  width: 86vw;
+  height: 60vh;
+}

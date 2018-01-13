@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>downloadSelected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main" transform="translate(-35.000000, -432.000000)">
+            <g id="downloadSelected" transform="translate(35.000000, 432.000000)">
+                <circle id="Oval-2-Copy-4" fill="#CD6799" cx="26" cy="26" r="26"></circle>
+                <g id="download" transform="translate(13.000000, 12.000000)" fill="#FFFFFF">
+                    <polygon id="Fill-1" points="24.4931904 11 24.4931904 21.4651609 1.50680962 21.4651609 1.50680962 11 0 11 0 23 26 23 26 11"></polygon>
+                    <polygon id="Fill-2" points="11.7550841 0 11.7550841 14.1883288 8.05436551 10.5446849 7 11.5829986 12.5007457 17 18 11.5829986 16.9463802 10.5446849 13.2464073 14.1883288 13.2464073 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
