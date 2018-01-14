@@ -1,5 +1,5 @@
 <template>
-    <div class="metric navy">
+    <div :class="metricClass">
         <img class="icon"  :src="imgLink"/>
         <div class="metric-value">
         {{number}}<span>{{unit}}</span>
@@ -12,10 +12,13 @@
 
 <<script>
 export default {
-  props: ['img', 'number', 'unit', 'name'],
+  props: ['color', 'img', 'number', 'unit', 'name'],
   computed: {
       imgLink(){
           return require('../img/icons/'+this.img)
+      },
+      metricClass(){
+          return "metric " + this.color
       }
   }
 }

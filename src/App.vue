@@ -2,51 +2,20 @@
   <div id="app">
     <header-component></header-component>
     <div class="body">
-      <panel-component></panel-component>
+      <panel-component :data="leftPanelData"></panel-component>
       <div style="flex-direction: column;">
         <div class="dashboard" id="overview">
               <div class="metrics-container">
-                <metric-component 
-                  img="launchWhite.svg"
-                  number="24.3"
-                  unit="K"
-                  name="App Launches">
+                <metric-component v-for="(m,index) in metrics"
+                  :key="index"
+                  :color="m.color"
+                  :img="m.img"
+                  :number="m.number"
+                  :unit="m.unit"
+                  :name="m.name">
                 </metric-component>
-
-                <div class="metric orange">
-                  <img class="icon" src="./img/icons/snipWhite.svg"/>
-                  <div class="metric-value">
-                    33<span>K</span>
-                  </div>
-                  <div class="metric-name">
-                    Snips
-                  </div>
-                </div>
-
-                <div class="metric grass">
-                  <img class="icon" src="./img/icons/redeemWhite.svg"/>
-                  <div class="metric-value">
-                    10<span>K</span>
-                  </div>
-                  <div class="metric-name">
-                    Redeems
-                  </div>
-                </div>
-
-                <div class="metric aqua">
-                  <img class="icon" src="./img/icons/snapWhite.svg"/>
-                  <div class="metric-value">
-                    25<span>K</span>
-                  </div>
-                  <div class="metric-name">
-                    Snaps
-                  </div>
-                </div>
               </div>
-
-              <div class="chart">
-                <canvas id="testChart" height="500" width="800"></canvas>
-              </div>
+              <chart-component></chart-component>
             </div>
       </div>
     </div>
@@ -57,6 +26,7 @@
 import Header from './components/Header.vue'
 import Panel from './components/Panel.vue'
 import Metric from './components/Metric.vue'
+import Chart from './components/Chart.vue'
 
 export default {
   name: 'app',
@@ -64,7 +34,27 @@ export default {
     headerComponent: Header,
     panelComponent: Panel, 
     metricComponent: Metric, 
-  }
+    chartComponent: Chart, 
+  },
+  data(){
+    return {
+      metrics: [
+        { color: 'navy', img: 'launchWhite.svg', number: '24.3', unit: 'K', name: "App Launches" },
+        { color: 'orange', img: 'snipWhite.svg', number: '33', unit: 'K', name: "Snips" },
+        { color: 'grass', img: 'redeemWhite.svg', number: '10', unit: 'K', name: "Redeems" },
+        { color: 'aqua', img: 'snapWhite.svg', number: '55', unit: 'K', name: "Snaps" },
+      ],
+      leftPanelData: [
+        { dashboard: "overview", title: "At-a-Glance", class: "link-1 icon icon-dash selected" },
+        { dashboard: "launches", title: "App Launches", class: "link-2 icon icon-launch" },
+        { dashboard: "snips", title: "Snips", class: "link-2 icon icon-snip" },
+        { dashboard: "redeems", title: "Redeems", class: "link-4 icon icon-redeem" },
+        { dashboard: "snaps", title: "Snaps", class: "link-5 icon icon-snap" },
+        { dashboard: "downloads", title: "Downloads", class: "link-6 icon icon-download" },
+        { dashboard: "stores", title: "Stores", class: "link-7 icon icon-store" },
+      ]
+    }
+  },
 }
 </script>
 
